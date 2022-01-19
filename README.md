@@ -1,2 +1,2 @@
 # new_disk_in_lvm_configuration
-Configure LVM logical volumes after adding new disk
+After adding a new disk to the virtual machine, it will help to configure lvm.
