@@ -2,7 +2,7 @@
 After adding a new disk to the virtual machine, it will help to configure lvm.
 
 Vars:
-"vg_name" => Volume Group name like "appvg"
+"vg_name" => Volume Group name like "appvg";
 "lv_name" => Logical Volume name like "applv"
 "require_lv_size" => Specify extents as a percentage of VG|PVS|FREE like "100%FREE"
 "fs" => filesystem on lvm like "ext4"
