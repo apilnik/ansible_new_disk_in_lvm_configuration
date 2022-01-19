@@ -8,5 +8,5 @@
 ###### "fs" => filesystem on lvm like "ext4"
 ###### "mount_point" => directory to mount the filesystem like "/app"
 
-### Raw_device:
+##### Raw_device:
 It will be chosen from ansible_devices when item.value.host.startswith('Serial') and (  item.value.partitions|length == 0)
