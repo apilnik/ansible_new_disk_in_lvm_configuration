@@ -11,12 +11,12 @@
       prompt: "Name of the logical Volume"
       private: no
  
-    - name: "require_lv_size"
+    - name: "lv_size"
       prompt: "Size of Logical volume to be created."
       private: no
 
     - name: "fs"
-      prompt: "Type of filesystem need to be created."
+      prompt: "Type of filesystem  to be created."
       private: no
 
     - name: "mount_point"
@@ -52,7 +52,7 @@
       lvol:
         vg: "{{ vg_name }}"
         lv: "{{ lv_name }}"
-        size: "{{ require_lv_size }}"
+        size: "{{ lv_size }}"
         active: yes
         force: no
         state: present
