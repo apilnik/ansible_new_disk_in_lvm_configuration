@@ -9,4 +9,4 @@
 ###### "mount_point" => directory to mount the filesystem like "/app"
 
 ##### Raw_device:
-It will be chosen from ansible_devices when item.value.host.startswith('Serial') and (  item.value.partitions|length == 0)
+It will be chosen from ansible_devices when item.value.host.startswith('Serial') and (  item.value.partitions|length == 0) if VG is already exist LV will be extend.
