@@ -77,6 +77,8 @@
             fstype: "{{ fs }}"
             opts: default
             state: mounted
+            dump: "1"
+            passno: "2"
       rescue:
 
         - name: extending existing filesystem
