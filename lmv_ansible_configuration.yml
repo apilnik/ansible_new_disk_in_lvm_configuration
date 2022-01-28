@@ -22,6 +22,10 @@
     - name: "mount_point"
       prompt: "Mount the filesystem under."
       private: no
+          
+    - name: "mount_opts"
+      prompt: "Mount options for the filesystem "
+      private: no
 
   tasks:
     - name: get device name
@@ -75,7 +79,7 @@
             path: "{{ mount_point }}"
             src: "/dev/mapper/{{ vg_name }}-{{ lv_name }}"
             fstype: "{{ fs }}"
-            opts: default
+            opts: "{{ mount_opts }}"
             state: mounted
             dump: "1"
             passno: "2"
